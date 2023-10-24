@@ -1,0 +1,40 @@
+### registrar usuario con nombreUsuario y contrasena
+POST http://127.0.0.1:8000/registrar_usuario
+Content-Type: application/json
+X-CSRFToken: 
+
+{ "nombreUsuario": "richard", "contrasena": "123456", "verificadorContrasena": "123456", "correo": "ri.perea@duocuc.cl" }
+
+
+### iniciar sesion con nombreUsuario y contrasena
+POST http://127.0.0.1:8000/iniciar_sesion
+Content-Type: application/json
+X-CSRFToken: 
+
+{ "nombreUsuario": "richard", "contrasena": "123456" }
+
+
+### eliminar usuario con nombreUsuario y contrasena
+DELETE http://127.0.0.1:8000/eliminar_usuario
+Content-Type: application/json
+X-CSRFToken: 
+
+{ "nombreUsuario": "richard", "contrasena": "123456" }
+
+
+### obtener token CSRF
+GET http://127.0.0.1:8000/get_csrf_token
+
+
+
+
+
+
+
+
+
+
+### verificar token de autenticación
+GET http://127.0.0.1:8000/test_session 
+Content-Type: application/json
+Authorization: token xxx
