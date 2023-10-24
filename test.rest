@@ -15,11 +15,11 @@ X-CSRFToken:
 
 
 ### eliminar usuario con nombreUsuario y contrasena
-DELETE http://127.0.0.1:8000/eliminar_usuario
+POST http://127.0.0.1:8000/eliminar_usuario
 Content-Type: application/json
 X-CSRFToken: 
 
-{ "nombreUsuario": "richard", "contrasena": "123456" }
+{ "nombreUsuario": "mato", "contrasena": "123456" }
 
 
 ### obtener token CSRF

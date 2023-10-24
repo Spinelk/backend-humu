@@ -61,14 +61,20 @@ def test_session(request):
 
 
 # eliminar usuario con nombre de usuario y contraseña
-@api_view(['DELETE'])
+@api_view(['POST'])
 @authentication_classes([SessionAuthentication])
 # @permission_classes([IsAuthenticated])
 def eliminar_usuario(request):
-    usuario = get_object_or_404(usuario, username=request.data['nombreUsuario'])
-    if not usuario.check_password(request.data['contrasena']):
+    nombreUsuario = request.data['nombreUsuario']
+    contrasena = request.data['contrasena']
+
+    print('eliminar_usuario: ' + nombreUsuario)
+    print('eliminar_usuario: ' + contrasena)
+
+    user = get_object_or_404(usuario, username=nombreUsuario)
+    if not user.check_password(contrasena):
         return Response("La contraseña no es valida", status=status.HTTP_400_BAD_REQUEST)
-    usuario.delete()
+    user.delete()
     return Response("usuario eliminado", status=status.HTTP_200_OK)
 
 
