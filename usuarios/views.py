@@ -34,8 +34,6 @@ def registrar_usuario(request):
         user.set_password(contrasena)
         user.save()
         perfil.objects.create(usuario=user)
-        # Autenticar al usuario después del registro
-        login(request, user)
         return Response({'mensaje': 'Registro exitoso'})
     return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
