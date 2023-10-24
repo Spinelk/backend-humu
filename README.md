@@ -3,9 +3,9 @@
 
 ## Instalación
 ```
-git clone https://github.com/Spinelk/django-user-auth.git
+git clone https://github.com/Spinelk/backend-humu.git
 
-cd django-user-auth
+cd backend-humu
 
 python -m venv venv
 
