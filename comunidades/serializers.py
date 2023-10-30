@@ -8,7 +8,7 @@ class ComunidadSerializer(serializers.ModelSerializer):
 
 
 
-class Canal(serializers.ModelSerializer):
+class CanalSerializer(serializers.ModelSerializer):
 
     class Meta(object):
         model = canal

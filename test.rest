@@ -30,11 +30,11 @@ GET http://127.0.0.1:8000/get_csrf_token
 ### obtener todas las comunidades
 GET http://127.0.0.1:8000/obtener_comunidades
 
-### Obtener canales de texto
-POST http://127.0.0.1:8000/obtener_canales_texto
+### Obtener canales
+POST http://127.0.0.1:8000/obtener_canales
 Content-Type: application/json
 
-{ "comunidad_id": "voyager" }
+{ "comunidad_id": "12" }
 
 ### Obtener canales de video
 POST http://127.0.0.1:8000/obtener_canales_video
