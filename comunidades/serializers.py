@@ -8,14 +8,9 @@ class ComunidadSerializer(serializers.ModelSerializer):
 
 
 
-class CanalTextoSerializer(serializers.ModelSerializer):
+class Canal(serializers.ModelSerializer):
 
     class Meta(object):
-        model = canalTexto
-        fields = ['id', 'nombre', 'comunidad']
+        model = canal
+        fields = ['id', 'nombre', 'tipo', 'comunidad']
 
-class CanalVideoSerializer(serializers.ModelSerializer):
-
-    class Meta(object):
-        model = canalVideo
-        fields = ['id', 'nombre', 'comunidad']
