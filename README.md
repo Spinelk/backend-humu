@@ -1,7 +1,7 @@
 # Django User Auth
 # Prueba de backend con django rest framework
 
-## Instalación Windows
+## Instalación
 ```
 git clone https://github.com/Spinelk/backend-humu.git
 
@@ -10,22 +10,6 @@ cd backend-humu
 python -m venv venv
 
 .\venv\Scripts\activate
-
-pip install -r requerimientos.txt
-
-python manage.py runserver
-
-```
-
-## Instalación Linux
-```
-git clone https://github.com/Spinelk/backend-humu.git
-
-cd backend-humu
-
-python -m venv venv
-
-Source venv/bin/activate
 
 pip install -r requerimientos.txt
 
