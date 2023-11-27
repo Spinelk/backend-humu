@@ -1,9 +1,11 @@
 # Humu - Proyecto Arquitectura de Software Duoc UC 2023-2
-# Backend de Humu - Aplicación de llamadas, videollamas y mensajeria instantanea similar a Discord
+# Backend de Humu (API REST) - Aplicación de llamadas, videollamas y mensajeria instantanea similar a Discord
 
 ## Frontend
 https://github.com/Spinelk/humu
 
+## Requisitos
+- Python 3.11
 
 ## Instalación Windows
 ```
