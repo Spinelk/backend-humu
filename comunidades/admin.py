@@ -4,14 +4,11 @@ from comunidades.models import *
 # admin.site.register(comunidad)
 
 
-class CanalTextoInline(admin.TabularInline):  # O usa StackedInline si lo prefieres
-    model = canalTexto
+class Canal(admin.TabularInline):  # O usa StackedInline si lo prefieres
+    model = canal
     extra = 1  # Define el número de formularios en línea que se muestran
 
-class CanalVideoInline(admin.TabularInline):
-    model = canalVideo
-    extra = 1
 
 @admin.register(comunidad)
 class ComunidadAdmin(admin.ModelAdmin):
-    inlines = [CanalTextoInline, CanalVideoInline] 
+    inlines = [Canal] 

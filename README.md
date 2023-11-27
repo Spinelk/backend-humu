@@ -1,7 +1,20 @@
-# Django User Auth
-# Prueba de backend con django rest framework
+# Humu - Proyecto Arquitectura de Software Duoc UC 2023-2
+## Backend de Humu (API REST) - Aplicación de llamadas, videollamas y mensajeria instantanea similar a Discord
+
+<br>
+
+## Frontend
+https://github.com/Spinelk/humu
+
+<br>
+
+## Requisitos
+- Python 3.11
+
+<br>
 
 ## Instalación
+Windows
 ```
 git clone https://github.com/Spinelk/backend-humu.git
 
@@ -17,19 +30,20 @@ python manage.py runserver
 
 ```
 
-## Testing
+<br>
 
-Para utilizar sin frontend se puede instalar la extensión de VSCode: REST Client
-
-## Original
-
-Youtube:
+Linux
 ```
-https://youtu.be/llrIu4Qsl7c?si=dikgav09Vc_89-8a
-```
-#
+git clone https://github.com/Spinelk/backend-humu.git
 
-Github:
-```
-https://github.com/alamorre/django-rest-auth
+cd backend-humu
+
+python -m venv venv
+
+Source venv/bin/activate
+
+pip install -r requerimientos.txt
+
+python manage.py runserver
+
 ```

@@ -23,20 +23,10 @@ def obtener_comunidades(request):
     serializer = ComunidadSerializer(comunidades, many=True)
     return Response(serializer.data)
 
-
-# Obtener todos los caneles de texto de una comunidad
+# Obtener todos los caneles de una comunidad
 @api_view(['POST'])
-def obtener_canales_texto(request):
+def obtener_canales(request):
     comunidad_id = request.data['comunidad_id']
-    print(comunidad_id)
-    canales_texto = canalTexto.objects.filter(comunidad=comunidad_id)
-    serializer = CanalTextoSerializer(canales_texto, many=True)
-    return Response(serializer.data) 
-
-# Obtener todos los caneles de video de una comunidad
-@api_view(['POST'])
-def obtener_canales_video(request):
-    comunidad_id = request.data['comunidad_id']
-    canales_video = canalVideo.objects.filter(comunidad=comunidad_id)
-    serializer = CanalVideoSerializer(canales_video, many=True)
+    canales = canal.objects.filter(comunidad=comunidad_id)
+    serializer = CanalSerializer(canales, many=True)
     return Response(serializer.data)
