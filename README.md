@@ -14,36 +14,47 @@ https://github.com/Spinelk/humu
 <br>
 
 ## Instalación
-Windows
+Clona el repositorio:
 ```
 git clone https://github.com/Spinelk/backend-humu.git
+```
 
+---
+
+Entra a la carpeta del proyecto:
+```
 cd backend-humu
+```
+---
 
+Crea el entorno virtual:
+```
 python -m venv venv
+```
 
+---
+
+Ejecuta el entorno virtual:
+
+- En Windows:
+```
 .\venv\Scripts\activate
-
-pip install -r requerimientos.txt
-
-python manage.py runserver
-
 ```
-
-<br>
-
-Linux
+- En Linux:
 ```
-git clone https://github.com/Spinelk/backend-humu.git
-
-cd backend-humu
-
-python -m venv venv
-
 Source venv/bin/activate
+```
 
+---
+
+Instala los requerimientos:
+```
 pip install -r requerimientos.txt
+```
 
+---
+
+Ejecuta el servidor:
+```
 python manage.py runserver
-
 ```
